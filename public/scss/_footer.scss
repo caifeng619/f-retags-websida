@@ -1,0 +1,74 @@
+/* styles for footer */
+footer{
+    .footer-container{
+       margin: 2rem 2rem 2rem;
+       padding: 1rem 0;
+       display: grid;
+       grid-template-columns: 1fr 1fr 1fr 2fr;
+       grid-gap:2rem;
+       h4{
+           color: $maincolor;
+       }
+       .footer-right{
+           text-align: right;
+           p{
+            text-transform: uppercase;
+            margin: 1rem 1rem;
+           }
+           .icons{
+              margin-top: 2rem;
+              display: flex;
+              justify-content: flex-end;
+              font-size: 1rem;
+              a{
+                margin-left: 1rem;
+                margin-bottom: .5rem;
+                padding-top: .4rem;
+                background:$background;
+                color:white;
+                text-align: center;
+                width: 40px;
+                height: 40px;
+                cursor: pointer;
+                border-radius: 20px;
+            }
+         }
+       }
+        ul{
+            margin-top: 1.5rem;
+            list-style: none;
+            li{
+                color: rgba(252, 102, 64, 1);
+                margin-top: .5rem;
+                cursor: pointer;
+            }
+            li:hover{
+                color: rgba(252, 102, 64, 0.7);
+            }
+        }
+   }
+    .copyright p{
+       margin: 1rem 2rem;
+    }
+}
+
+@media screen and (max-width:786px){
+    footer .footer-container{
+      grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width:487px){
+    footer .footer-container{
+      grid-template-columns: 1fr;
+      .support, .services, .about-us-links{
+          margin-left: 2rem;
+      }
+      .footer-right{
+          text-align: left;
+          .icons{
+              justify-content: flex-start;
+          }
+      }
+    }
+}

@@ -1,0 +1,41 @@
+// styles for try section
+.try-section{
+    background-image: linear-gradient(to right, rgba(252, 100, 34, 0.8),rgba(252, 102, 64, 0.1)), url(../../bilder/try.jpg);
+    clip-path: polygon(100% 0, 100% 89%, 0 100%, 0 11%);
+    height: 25rem;
+    display: flex;
+    align-items: center;
+    img{
+        width: 50%;
+        margin-left: 3rem;
+    }
+    .try-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 3rem;
+        h2, p{
+            color: white;
+            letter-spacing: 1px;
+        }
+        button{
+            padding: .5rem 2rem;
+            background:transparent;
+            border: 1px solid white;
+            color:white;
+            margin: 1rem 1rem 0 0;
+        }
+    }
+}
+
+@media screen and (max-width:786px){
+    .try-section{
+        img{
+            margin-left: 1rem;
+        }
+        .try-text{
+            margin-left: 1rem;
+        }
+    }
+}

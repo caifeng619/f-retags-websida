@@ -1,0 +1,67 @@
+/* styles for navbar */
+nav{
+    height: 10vh;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top:0;
+    z-index: 1;
+    font-size: 1.3rem;
+    border-bottom: 1px solid #CC835A;
+    img{
+        width:auto;
+        height: 10vh;
+        margin: .2rem 2rem;
+    }
+    .nav-links{
+        display: flex;
+        list-style: none;
+        justify-content: space-around;
+        align-items: center;
+        width:50%;
+        height: 100%;
+        margin-left: auto;
+        margin-bottom: 0;
+        li a{
+            color:$maincolor;
+            text-decoration: none;
+        }
+        li a:hover{
+            color: silver; 
+         }
+    }
+    .hamburger{
+        visibility: hidden;
+    }
+}
+
+// styles for header
+header{
+    height: 90vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url("../../bilder/header.jpeg");
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    button{
+    padding: .5rem 2rem;
+    width:15rem;
+    background: $maincolor;
+    border: none;
+    color: white;
+    margin: 2rem 1rem 0 0;
+    }
+}
+
+@media screen and (max-height:400px){
+    nav{
+      height: 15vh;
+    }
+    header{
+        height: 85vh;
+    }
+}

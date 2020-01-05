@@ -1,0 +1,74 @@
+
+// styles for contact us section
+.contact-us-section{
+    margin: 4rem 1rem 3rem;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 2rem;
+    .cantact-us-img{
+      border-radius: 5px;
+      img{
+        display: block;
+        max-width: 20rem;
+        margin: 1rem auto;
+        clip-path: circle(50% at 50% 50%);
+      }
+      p{
+        color: $maincolor;
+        text-align: center;
+        font-size: 1.3rem;
+        a{
+          text-decoration: none;
+          color: $maincolor;
+        }
+      }
+    }
+    .contact-us-form{
+      border-radius: 5px;
+      background: white;
+      h2{
+        margin-bottom: 2rem;
+        text-align: center;
+        color: $maincolor
+      }
+      input, textarea{
+        width: 90%;
+        margin: .5rem .5rem;
+        padding: .5rem;
+        background: transparent;
+        border: none;
+        border:1px solid rgba(145, 143, 143, 0.5);
+      }
+      button{
+        padding: .5rem;
+        background: $maincolor;
+        border: none;
+        color: white;
+        width: 40%;
+        margin: 2rem 30%;
+      }
+    }
+  }
+
+  @media screen and (max-width:786px){
+    .contact-us-section{
+        margin: 4rem 0rem 2rem;
+        grid-template-columns: 1fr;
+        .cantact-us-img{
+            img{
+               max-width: 15rem;
+               margin: 0 auto;
+            }
+            p{
+                margin-top: 1.5rem
+            }
+        }
+        .contact-us-form{
+            input, button{
+                margin: 1 auto;
+            }
+        }
+      }
+  }
+  
