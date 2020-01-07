@@ -39,9 +39,10 @@
     width: 5rem;
     height: 5rem;
     border-radius: 40px;
-    border:1px solid #CC835A;
-    color: $maincolor;
-    font-size: 3rem;
+    background: rgba(252, 102, 64, 1);
+    color: white;
+    font-size: 2.5rem;
+    padding-top: 0.5rem;
   }
 }
 
@@ -55,7 +56,7 @@
   margin: 1rem 1rem 0 0;
 }
 .promotion-section{
-  background-image:linear-gradient(45deg, rgba(125, 168, 248, 0.1), rgba(252, 102, 64, 0.3)),url("../../bilder/promotion\ background.jpeg");
+  background-image:linear-gradient(45deg, rgba(125, 168, 248, 0.1), rgba(252, 102, 64, 0.3)),url("../../bilder/promotion-background.jpeg");
   background-position: center;
   text-align: center;
   color: white;
