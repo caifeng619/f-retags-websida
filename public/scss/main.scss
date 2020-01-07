@@ -1,7 +1,7 @@
 @import "variable.scss";
 @import "header.scss";
-@import "contact.scss";
 @import "trysection.scss";
+@import "contact.scss";
 @import "footer.scss";
 
 *{
@@ -109,9 +109,6 @@
         width: 100% !important;
       }
     }
-  }
-  .promotion-section{
-    background-image: linear-gradient(45deg, rgba(125, 168, 248, 0.1), rgba(252, 102, 64, 0.3)),url("../../bilder/promotion-background-sm.jpeg");
   }
   .service-items{
     grid-template-columns: 1fr;
