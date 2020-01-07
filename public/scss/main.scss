@@ -3,7 +3,6 @@
 @import "contact.scss";
 @import "trysection.scss";
 @import "footer.scss";
-@import "breakpiont.scss";
 
 *{
   margin: 0;
@@ -97,6 +96,38 @@
       border-radius: 0;
       a{
         text-decoration: none;
+      }
+    }
+  }
+}
+// breakpiont for main section
+@media screen and (max-width:786px){
+  .why-section{
+    .why-items-container{
+      flex-direction: column;
+      .why-items{
+        width: 100% !important;
+      }
+    }
+  }
+  .promotion-section{
+    background-image: linear-gradient(45deg, rgba(125, 168, 248, 0.1), rgba(252, 102, 64, 0.3)),url("../../bilder/promotion-background-sm.jpeg");
+  }
+  .service-items{
+    grid-template-columns: 1fr;
+  }
+}
+// item direction in why choose us section changes when screen width is between 768px and 929px.
+@media screen and (min-width:768px) and (max-width:929px){
+  .why-items-container{
+    flex-direction: column;
+    .why-items{
+      width:80%;
+      margin: auto;
+      display: flex;
+      .why-items-text{
+        width:90%;
+        margin:auto;
       }
     }
   }
